@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    background-image: url(./images/imgHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    color:deeppink;
+    
+}
+
+.busqueda{
+    border: 2px solid rgb(190, 184, 173);
+    border-radius: 40px;
+    background-color: aliceblue;
+    height: 30px;
+    width: 20%;
+    
+}
+
+.img{
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    object-position: center center;
+}
+
+.main{
+    display: flex;
+}
+
+.section{
+    margin: 0px 50px 0px 50px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    
+<link rel="stylesheet" href="./HTML_files/styles.css"></head>
+
+<body>
+    <header class="header">
+        <h1>Programación con HTML</h1>
+        <input class="busqueda" type="text" placeholder="Buscar">
+    </header>
+    <main class="main">
+        <nav class="url">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#estructuraWeb">Ir a Estructura web y documentación</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#etiquetaSemantica">Ir a Etiquetas semánticas del HTML</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#estructuraSemantica" target="_blank">Ver video: Estructura Semántica del
+                        HTML</a></li>
+            </ul>
+        </nav>
+
+        <section class="section">
+            <article>
+                <h2>HTML</h2>
+                <p>Significa Lenguaje de Marcado de Hipertexto (HTML), y es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las  marcas HTML incluyen "elementos" especiales. Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en el nombre del elemento rodeado por "&lt;" y "&gt;".</p>
+                <h3>Anatomía del elemento HTML</h3>
+                <img src="./HTML_files/anatomiaElementoHTML.png" alt="Anatomía del Elemento HTML" height="200" width="500">
+            </article>
+
+            <article>
+                <h2 id="etiquetaSemantica">Etiquetas semánticas del HTML</h2>
+                <p>Son aquellas que dan un significado a las partes del documento.
+                    Por decirlo de otra forma, estamos ante etiquetas que indican qué es el contenido que contienen.
+                    Las etiquetas semánticas ayudan a definir la estructura del documento y permiten que las páginas web sean mejor indexadas por los buscadores. 
+                </p>
+            </article>
+           
+            <article>
+                <h2 id="estructuraWeb">Estructura web del HTML</h2>
+                <p>Las páginas web pueden y se deben diferenciar las unas de las otras, pero todas tienden a contener elementos comunes parecidos. 
+                    HTML dispone de etiquetas adecuadas que puedes usar para establecer estas secciones semánticas, por ejemplo:
+                   </p><ul> 
+                    <li>encabezado: &lt;header&gt; </li>
+                    <li>menú de navegación: &lt;nav&gt; </li>
+                    <li>contenido principal: &lt;main&gt; con varias subsecciones (además de la barra lateral) representadas por los elementos &lt;article&gt;, &lt;section&gt;, y &lt;div&gt;</li>
+                    <li>barra lateral: &lt;aside&gt; (a menudo colocada dentro de &lt;main&gt;)</li>
+                    <li>pie de página: &lt;footer&gt; </li>
+                </ul>
+                <p></p>
+            </article>
+        </section>
+
+        <aside>
+            <section>
+                <h2>Últimas noticias</h2>
+                <article>
+                    <h3>El mayor concurso de programación de Latinoamerica. <br>Edición 2021<br></h3>
+                    <p>Este concurso se desarrolla para Perú, Colombia y México. Está dirigido a estudiantes universitarios, profesionales y público en general sin límite de edad. Para el desarrollo del proyecto se puede utilizar calquier lenguaje de programación.</p>
+
+                    <p>Regístrate y participa <a href="https://codejam.devsu.com/?gclid=CjwKCAjww-CGBhALEiwAQzWxOm_k6nZ5iuGhgbC38TQvBoKoUw8CSza12ruCaf0SuVICujSUbosDIxoCpPwQAvD_BwE">aquí</a>.</p>
+                    
+                </article>
+                <article>
+                    <h3 id="cursoHTML">Curso de HTML5 desde cero</h3>
+                    <iframe width="300" height="200" src="./HTML_files/kN1XP-Bef7w.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </article>
+            </section>
+        </aside>
+    </main>
+
+    <footer> <strong>© Hecho por Mariana Navarro 2021</strong></footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
