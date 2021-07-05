@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 242, 253);
+    width: 300px;
+    padding: 15px; 
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.ContactForm__title {
+    text-align: center;
+}
+
+.ContactForm__label {
+    margin: 4px;
+    font-size: 14px;
+}
+
+.ContactForm__input:focus {
+    background-color: rgb(229, 226, 226);
+    outline: none;
+}
+
+.ContactForm__input {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    /*box-shadow: color x y blur;*/
+    /*box-shadow: rgb(100, 181, 246) 0 0 1px;*/
+    border: 1px solid rgba(100, 181, 246, .5);
+}
+
+.ContactForm__textarea:focus {
+    background-color: rgb(229, 226, 226);
+    outline: none;
+}
+
+.ContactForm__textarea {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(100, 181, 246, .5);
+}
+
+.ContactForm__submit {
+    background-color: rgb(100, 181, 246);
+    color: antiquewhite;
+    border-radius: 3px;
+    border: none;
+    margin: auto;
+    padding: 7px 12px;
+}
