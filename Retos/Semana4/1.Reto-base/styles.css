@@ -21,11 +21,13 @@ body {
   height: 300px;
 }
 
-div {
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 2rem;
-  text-align: center;
+div[class^="item"] {
+  border-radius: 10px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8e8e8;
 }
 
 .item1 {
